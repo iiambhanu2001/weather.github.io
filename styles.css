@@ -1,0 +1,86 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+padding: 0;
+background: black;
+background-image: url('https://source.unsplash.com/1600x90/?landscape nature');
+}
+.card{
+   background: #000000d0;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  padding: 2em;
+  margin: 1em;
+  color: white;
+  
+  
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+button {
+ margin: 0.3em;
+ border-radius: 50%;
+ border: none;
+ 
+ outline: none;
+ background: #7c7c7c2b;
+ color: white;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+ height: 44px;
+  width: 44px;
+ 
+}
+
+.input{
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: cursive;
+  font-size: 100%;
+  width: 100%;
+
+  
+}
+button:hover{
+  background: #7c7c7c2b;
+}
+.temp{
+  margin: 0;
+  font-size: x-large;
+}
+
+.description {
+
+  text-transform: capitalize;
+}
+.report{
+  display: flex;
+  align-items: center;
+}
+.weather.loading{
+  visibility: hidden;
+  position: relative;
+
+}
+.weather.loading::after{
+  visibility: visible;
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
